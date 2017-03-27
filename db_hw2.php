@@ -25,7 +25,7 @@
    <button type = 'submit' name = 'sort'>Отсортировать</button>
 </form>
 <?php
-$listTask = new PDO('mysql:host=localhost; dbname=protasov; charset=utf8', 'protasov', 'neto0895');
+$listTask = new PDO('mysql:host=localhost; dbname=protasov; charset=utf8', '*******', '*******');
 $listTask->query('SET NAMES utf8');
 if ((isset($_POST['added'])) and (isset($_POST['description']))) {
    if ($_POST['description'] !== ''){
